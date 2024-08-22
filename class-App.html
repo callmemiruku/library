@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="image/logo3.png" type="image/x-icon">
+    <title>Application</title>
+    <link rel="stylesheet" href="class-page.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"> <i class="fas fa-book">&nbsp;</i>IT library</a>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="search.html" class="fas fa-search" ></a>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--dropdown-->
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="index.html">หนังสือแนะนำ</a></li>
+      <li><a href="index.html">โครงงานนักเรียน นักศึกษา</a></li>
+      <li><a href="index.html">ข่าวสาร</a></li>
+      <li>
+        <a href="#">หมวดหมู่ ▾</a>
+        <ul class="dropdown">
+          <li><a href="class-App.html">ออกแบบและพัฒนาเว็บไซต์/แอปพลิเคชั่น</a></li>
+          <li><a href="class-html.html">PHP XML และ HTML</a></li>
+          <li><a href="class-java.html">JAVA</a></li>
+          <li><a href="class-c.html">ภาษา C</a></li>
+          <li><a href="class-other.html">อื่น ๆ</a></li>
+          <li><a href="class-project.html">โครงงานนักเรียนนักศึกษา</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--login-->
+    <div class="login-form">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+        
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="forgotpassword.html">click here</a></p>
+            <p>don't have an account ? <a href="register.html">create one</a></p>
+        </form>
+    </div>
+
+
+    <!--book-->
+    <div class="container-fluid">
+      <div class="container">
+  
+          <div class="product-list">
+
+              <div class="product">
+                  <img src="image/book1.jpg">
+                  <h3>ออกแบบและพัฒนา <br> เว็บไซต์ด้วย jQuery</h3>
+                  <div>
+                    <details>
+                      <summary>คลิกเพื่อดูรายละเอียด</summary>
+                      หนังสือวางอยู่ในตู้ที่ 1 ชั้น 3
+                    </details>
+                  </div>
+              </div>
+  
+              <div class="product">
+                  <img src="image/book2.jpg" class="book2">
+                  <h3 class="text2-1">ออกแบบและพัฒนา <br> เว็บด้วย DHTML <br> (HTML/CSS/Java <br>Script)</h3>
+                  <div>
+                    <details class="text2-2">
+                      <summary>คลิกเพื่อดูรายละเอียด</summary>
+                      หนังสือวางอยู่ในตู้ที่ 1 ชั้น 3
+                    </details>
+                  </div> 
+              </div>
+  
+              <div class="product">
+                  <img src="image/book6.jpg" class="book6">
+                  <h3 class="text6-1">การเขียนโปรแกรม <br> Swift และ iOS <br> ฉบับพื้นฐาน</h3>
+                  <div>
+                    <details class="text6-2">
+                      <summary>คลิกเพื่อดูรายละเอียด</summary>
+                      หนังสือวางอยู่ในตู้ที่ 1 ชั้น 2
+                    </details>
+                  </div> 
+              </div>
+  
+              <div class="product">
+                  <img src="image/book9.jpg" class="book9">
+                  <h3 class="text9-1">พัฒนา Mobile App <br> ฉบับ Pro Android</h3>
+                  <div>
+                    <details class="text9-2">
+                      <summary>คลิกเพื่อดูรายละเอียด</summary>
+                      หนังสือวางอยู่ในตู้ที่ 1 ชั้น 2
+                    </details>
+                  </div> 
+              </div>
+
+              <div class="product">
+                  <img src="image/book12.jpg">
+                  <h3>สร้าง Windows <br> Application ด้วย <br>  Visual Basic 2015</h3>
+                  <div>
+                    <details>
+                      <summary>คลิกเพื่อดูรายละเอียด</summary>
+                      หนังสือวางอยู่ในตู้ที่ 1 ชั้น 4
+                    </details>
+                  </div> 
+              </div>
+  
+          </div>
+      </div>
+    </div>
+
+<script src="class-page.js"></script>
+</body>
+</html>

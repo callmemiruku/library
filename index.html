@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="image/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--loader-->
+    <div id="pre-loader"></div>
+
+    <!--header-->
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"> <i class="fas fa-book">&nbsp;</i>IT library</a>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="search.html" class="fas fa-search" ></a>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--dropdown-->
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#featured1">หนังสือแนะนำ</a></li>
+        <li><a href="#featured2">โครงงานนักเรียน นักศึกษา</a></li>
+        <li><a href="#blogs">ข่าวสาร</a></li>
+        <li>
+            <a href="#">หมวดหมู่ ▾</a>
+            <ul class="dropdown">
+              <li><a href="class-App.html">ออกแบบและพัฒนาเว็บไซต์/แอปพลิเคชั่น</a></li>
+              <li><a href="class-html.html">PHP XML และ HTML</a></li>
+              <li><a href="class-java.html">JAVA</a></li>
+              <li><a href="class-c.html">ภาษา C</a></li>
+              <li><a href="class-other.html">อื่น ๆ</a></li>
+              <li><a href="class-project.html">โครงงานนักเรียนนักศึกษา</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--login-->
+    <div class="login-form">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+        
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="forgotpassword.html">click here</a></p>
+            <p>don't have an account ? <a href="register.html">create one</a></p>
+        </form>
+    </div>
+
+    <!--home-->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>IT Library</h3>
+                <p>a learning books for you</p>
+                <a class="btn">Welcome</a>
+            </div>
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/book5.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book16.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book3.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/htmlbook4.jpg" alt=""></a> 
+                <a href="#" class="swiper-slide"><img src="image/book12.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/book10.jpg" alt=""></a>
+                </div>
+            </div>
+                <img src="image/standjpg" class="stand1" alt="">
+        </div>
+    </section>
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-book"></i>
+            <div class="content">
+                <h3>หนังสือมากมาย</h3>
+                <p>หนังสือมากมายหลายประเภท <br> เพื่อการเรียนรู้</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-book"></i>
+            <div class="content">
+                <h3>ผลงานนักเรียน นักศึกษา</h3>
+                <p>สืบค้นโครงงานนักเรียน นักศึกษา <br> แผนกสารสนเทศ ได้ที่นี่</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>สืบค้นข้อมูลง่าย ๆ</h3>
+                <p>ค้นหาหนังสือที่ต้องการได้โดยไม่ยุ่งยาก</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-heart"></i>
+            <div class="content">
+                <h3>ดูได้ทุกที่ทุกเวลา</h3>
+                <p>สามารถค้นหาข้อมูลในเว็บไซต์ได้ตลอดเวลา</p>
+            </div>
+        </div>
+    </section>
+
+    <!--featured book-->
+    <section class="featured" id="featured1">
+        <h1 class="heading"><span>หนังสือแนะนำ</span></h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/htmlbook4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>พัฒนาเว็บไซต์สมัยใหม่ ด้วย HTML5 Bootstrap CSS3+ jQuery+JavaScript+Ajax</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>ออกแบบและพัฒนาเว็บไซต์ด้วย jQuery</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book11.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>คู่มือการเขียนโปรแกรมภาษา JAVA ฉบับผู้เริ่มต้น</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>ระบบฐานข้อมูล Database Systems</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book30.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Digital Learning By Doing</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book18.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>การเขียนโปรแกรมด้วยภาษา C</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book29.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>หลักการพื้นฐานของวิศวกรรมซอฟต์แวร์</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book24.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>เคล็ดลับการออกแบบ e-Learning สำหรับนักออกแบบและผู้สอน</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/book25.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>การวิเคราะห์และออกแบบระบบสารสนเทศ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+
+    <!--featured project-->
+    <section class="featured" id="featured2">
+        <h1 class="heading"><span>โครงงานนักเรียน นักศึกษา</span></h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>พัฒนาเว็บไซต์ส่งเสริมการอ่าน</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>ถังขยะอัตโนมัติ</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>แบบจำลองเครื่องฟอกอากาศอัจฉริยะ</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>เว็บไซต์ส่งเสริมการออกกำลังกาย</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>เว็บไซต์หาเพื่อนคุยผ่านข้อความ</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="search.html" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                    </div>
+                    <div class="image">
+                        <img src="image/project6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>ชุดจำลองระบบไฮโดรโปนิกส์ DRFT อัจฉริยะ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!--blog-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>ข่าวสาร</span></h1>
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/สมัครเรียน.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>เปิดรับสมัครนักเรียน นักศึกษาใหม่ ประจำปีการศึกษา 2566</h3>
+                        <p>แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยอาชีวศึกษาธนบุรี เปิดรับสมัครนักเรียน นักศึกษาใหม่ ประจำปีการศึกษา 2566</p>
+                        <a href="https://www.facebook.com/share/p/RwaiV7LQCg8H73hd/" class="btn" target="_blank">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/ซ้อม.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>พิธีฝึกซ้อมมอบปริญญาบัตรและแสดงความยินดีแก่ผู้สำเร็จการศึกษาระดับปริญญาตรี ประจำปีการศึกษา 2566  </h3>
+                        <p>ดร.กฤติญา วังหอม ผู้อำนวยการและคณะครูแผนกวิชาเทคโนโลยีสารสนเทศ
+                            เข้าร่วมพิธีฝึกซ้อมมอบปริญญาบัตรและแสดงความยินดีแก่ผู้สำเร็จการศึกษาระดับปริญญาตรี ประจำปีการศึกษา 2566</p>
+                        <a href="https://www.facebook.com/ittvc/posts/pfbid02Fxy8hQRkNvAGbmgdEyahGxJc7wVKvLWAkKc9zUf7tfcp19ha3aw7okczxzEomXzml" class="btn" target="_blank">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/สถาปนา.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>จัดวันคล้ายวันสถาปนาวิทยาลัยอาชีวศึกษาธนบุรี ครบรอบ 86 ปี  </h3>
+                        <p>ภายในงานมีการจัดกิจกรรมทำบุญตักบาตรข้าวสารอาหารแห้ง และ มอบทุนการศึกษาให้แก่นักเรียนนักศึกษาที่มีผลการเรียนดี มีความประพฤติดี และมีจิตอาสา ประจำปี 2567</p>
+                        <a href="https://www.facebook.com/share/p/irE9ttyUYhafj4T3/" class="btn" target="_blank">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/ถวายพระพร.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>พิธีถวายพระพรชัยมงคลพระบาทสมเด็จพระเจ้าอยู่หัว</h3>
+                        <p>ร่วมพิธีถวายเครื่องราชสักการะ วางพานพุ่มเบื้องหน้าพระบรมฉายาลักษณ์พระบาทสมเด็จพระเจ้าอยู่หัว และ ลงนามถวายพระพรชัยมงคล</p>
+                        <a href="https://www.facebook.com/ittvc/posts/pfbid02t4xpbMiSwJ2zy5mE9R6jNfDd5yQjPX3ZtkCv9vefiBjrsrKiW7DJQd1GHxsKvpMul" class="btn" target="_blank">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/ไหว้ครู.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>พิธีไหว้ครู ไหว้ครูช่างและครอบครู </h3>
+                        <p>เป็นการระลึกถึงพระคุณและแสดงความเคารพครู อีกทั้งเป็นการมอบตัวเข้าเป็นศิษย์ ขอเป็นผู้สืบทอดศิลปะและเป็นการรักษาประเพณีอันดีงามให้คงอยู่ต่อไป</p>
+                        <a href="https://www.facebook.com/share/p/DJprzRScEjdMxM1h/" class="btn" target="_blank">อ่านเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our locations</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31005.021707825344!2d100.42780117431643!3d13.740974999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299b441484ffb%3A0x4b297997ff9ccbd3!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lit4Liy4LiK4Li14Lin4Lio4Li24LiB4Lip4Liy4LiY4LiZ4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1722430260359!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="box1">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>หน้าแรก</a>
+                <a href="#featured1"><i class="fas fa-arrow-right"></i>หนังสือแนะนำ</a>
+                <a href="#featured2"><i class="fas fa-arrow-right"></i>โครงงานนักเรียน นักศึกษา</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i>ข่าวสาร</a>
+            </div>
+            
+            <div class="box2">
+                <h3>contact info</h3>
+                <a><i class="fas fa-phone"></i>02-412-6285 , 02-4123-411</a>
+                <a><i class="fas fa-envelope"></i>saraban@thonburi.ac.th</a>
+                <a><i class="fas fa-heart"></i>182 ซอย จรัญสนิทวงศ์ 13 แขวงวัดท่าพระ เขตบางกอกใหญ่ กรุงเทพมหานคร 10600</a>
+                <a href="https://sites.google.com/thonburi.ac.th/ittvc"><i class="fas fa-heart"></i>เว็บไซต์แผนกวิชาเทคโนโลยีสารสนเทศ</a>
+            </div>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/ittvc?locale=th_TH" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="https://www.instagram.com/technolog_it2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="fab fa-instagram" target="_blank"></a>
+        </div>
+        <div class="credit"> created by <span>Chatchanok Nisachon Wannipa</span> | all rights </div>
+    </section>
+
+    <!--buttonback-->
+    <p id="back-top">
+        <a href="#top"><i class='bx bx-up-arrow-alt'></i></a>
+    </p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root {
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(var(--black));
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+*{
+  font-family: 'Kanit', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  transition: width none;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+section{
+    padding: 5rem 9%;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+}
+.heading span{
+    font-size: 3rem;   
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover {
+    background: var(--dark-color);
+}
+.header .header-1 {
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-1 .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .header-1 .logo i {
+    color: var(--green);
+}
+.header .header-1 .icons div, 
+.header .header-1 .icons a {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+    color: var(--green);
+}
+#search-btn {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    background: var(--green);
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+}
+ul li il.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: var(--green);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: var(--dark-color);
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,9);
+    position: fixed;
+    top: 0; right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+.login-form.active{
+    right: 0;
+}
+.login-form form{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+.login-form form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+.login-form form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.login-form form .box{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    text-transform: none;
+}
+.login-form form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+.login-form form .checkbox label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.login-form form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.login-form form p{
+    padding: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.login-form form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+.login-form #close-login-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 80px 0px;
+}
+.container {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.container .search {
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+.container .search input {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+.container .search input::placeholder {
+    color: green;
+    font-weight: 500;
+}
+.container .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: -50px;
+}
+.container .product-list .product {
+    margin-top: 30px;
+    padding-left: 10px;
+}
+.container .product-list .product img {
+    height: 300px;
+    margin-top: 70px;
+}
+.container .product-list .product h3 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.container .product-list .product .book2 {
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 8px;
+}
+.container .product-list .product .text2-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+.container .product-list .product .text2-2 {
+    margin-left: 8px;
+} 
+.container .product-list .product .book6 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 8px;
+}
+.container .product-list .product .text6-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+.container .product-list .product .text6-2 {
+    margin-left: 8px;
+} 
+.container .product-list .product .book9 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-right: 30px;
+    padding-left: 10px;
+}
+.container .product-list .product .text9-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.container .product-list .product .text9-2 {
+    margin-left: 10px;
+} 
+.container .product-list .product .book4 {
+    height: 300px;
+    margin-top: 70px;
+    margin-left: -5px;
+}
+.container .product-list .product .bookhtml {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-right: 330px;
+}
+.container .product-list .product .book11 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.container .product-list .product .text11-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+.container .product-list .product .text11-2 {
+    margin-left: 30px;
+} 
+.container .product-list .product .book19 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-right: 330px;
+}
+.container .product-list .product .book17 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.container .product-list .product .book18 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: -10px;
+}
+.container .product-list .product .text18-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -10px;
+}
+.container .product-list .product .text18-2 {
+    margin-left: -10px;
+} 
+.container .product-list .product .book7 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.container .product-list .product .book8 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.container .product-list .product .text8-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.container .product-list .product .text8-2 {
+    margin-left: 15px;
+} 
+.container .product-list .product .book10 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-right: 10px;
+}
+.container .product-list .product .book21 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.container .product-list .product .book22 {
+    height: 300px;
+    width: 320px;
+    margin-top: 70px;
+    margin-left: 3px;
+}
+.container .product-list .product .text22-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 45px;
+}
+.container .product-list .product .text22-2 {
+    margin-left: 45px;
+} 
+.container .product-list .product .book23 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-right: 55px;
+}
+.container .product-list .product .book24 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+}
+.container .product-list .product .book25 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.container .product-list .product .text25-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.container .product-list .product .text25-2 {
+    margin-left: 5px;
+} 
+.container .product-list .product .book26 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 85px;
+}
+.container .product-list .product .text26-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 85px;
+}
+.container .product-list .product .text26-2 {
+    margin-left: 85px;
+} 
+.container .product-list .product .book27 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+.container .product-list .product .text27-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 90px;
+}
+.container .product-list .product .text27-2 {
+    margin-left: 90px;
+} 
+.container .product-list .product .book28 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: 85px;
+}
+.container .product-list .product .text28-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 80px;
+}
+.container .product-list .product .text28-2 {
+    margin-left: 80px;
+} 
+.container .product-list .product .book34 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-right: 40px;
+}
+.container .product-list .product .book35 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.container .product-list .product .text35-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+.container .product-list .product .text35-2 {
+    margin-left: 40px;
+}
+.container .product-list .product .book36 {
+    height: 300px;
+    width: 265px;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+.container .product-list .product .text36-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 75px;
+}
+.container .product-list .product .text36-2 {
+    margin-left: 75px;
+}
+.container .product-list .product .book38 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.container .product-list .product .text38-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 70px;
+}
+.container .product-list .product .text38-2 {
+    margin-left: 70px;
+}
+.container .product-list .product .book37 {
+    height: 300px;
+    width: 290px;
+    margin-top: 70px;
+    margin-left: -30px;
+}
+.container .product-list .product .book39 {
+    height: 300px;
+    width: 225px;
+    margin-top: 70px;
+    margin-left: -20px;
+}
+.container .product-list .product .text39-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -20px;
+}
+.container .product-list .product .text39-2 {
+    margin-left: -20px;
+}
+.container .product-list .product .book5 {
+    height: 300px;
+    width: 230px;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+.container .product-list .product .text5-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 0px;
+}
+.container .product-list .product .text5-2 {
+    margin-left: 0px;
+}
+.container .product-list .product .book15 {
+    height: 300px;
+    width: 250px;
+    padding-right: 20px;
+    margin-top: 70px;
+    margin-right: -30px;
+}
+.container .product-list .product .project1 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+}
+.container .product-list .product .project2 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 32px;
+}
+.container .product-list .product .textpro2-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 32px;
+}
+.container .product-list .product .textpro2-2 {
+    margin-left: 32px;
+}
+.container .product-list .product .project3 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.container .product-list .product .textpro3-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.container .product-list .product .textpro3-2 {
+    margin-left: 30px;
+}
+.container .product-list .product .project4 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+.container .product-list .product .textpro4-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.container .product-list .product .textpro4-2 {
+    margin-left: 30px;
+}
+.container .product-list .product .project5 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+}
+.container .product-list .product .project6 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 32px;
+}
+.container .product-list .product .textpro6-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 32px;
+}
+.container .product-list .product .textpro6-2 {
+    margin-left: 32px;
+}
+.container .product-list .product .project7 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.container .product-list .product .textpro7-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.container .product-list .product .textpro7-2 {
+    margin-left: 30px;
+}
+.container .product-list .product .project8 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+.container .product-list .product .textpro8-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.container .product-list .product .textpro8-2 {
+    margin-left: 30px;
+}
+.container .product-list .product .project9 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: 0px;
+}
+.container .product-list .product .project10 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: -380px;
+}
+.container .product-list .product .textpro10-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -380px;
+}
+.container .product-list .product .textpro10-2 {
+    margin-left: -380px;
+}
+.container .product-list .product .project11 {
+    height: 300px;
+    width: 220px;
+    margin-top: 70px;
+    margin-left: -540px;
+}
+.container .product-list .product .textpro11-1 {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: -540px;
+}
+.container .product-list .product .textpro11-2 {
+    margin-left: -540px;
+}
+
+details {
+    width: 180px;
+    background: var(--dark-color);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+summary {
+    font-size: 16px;
+}
+details[open] summary {
+    margin-bottom: 10px;
+}
+details a{
+    color: blue;
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 15px;
+    /*margin-left: -150px;*/
+    right: 30px;
+}
+#back-top a {
+    display: block;
+    font-size: 40px;
+    color: var(--dark-color);
+    opacity: 0.9;
+
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}

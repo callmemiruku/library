@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="image/logo3.png" type="image/x-icon">
+    <title>Other</title>
+    <link rel="stylesheet" href="class-page.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="header-1">
+          <a href="index.html" class="logo"> <i class="fas fa-book">&nbsp;</i>IT library</a>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="search.html" class="fas fa-search" ></a>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--dropdown-->
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="index.html">หนังสือแนะนำ</a></li>
+      <li><a href="index.html">โครงงานนักเรียน นักศึกษา</a></li>
+      <li><a href="index.html">ข่าวสาร</a></li>
+      <li>
+          <a href="">หมวดหมู่ ▾</a>
+          <ul class="dropdown">
+            <li><a href="class-App.html">ออกแบบและพัฒนาเว็บไซต์/แอปพลิเคชั่น</a></li>
+            <li><a href="class-html.html">PHP XML และ HTML</a></li>
+            <li><a href="class-java.html">JAVA</a></li>
+            <li><a href="class-c.html">ภาษา C</a></li>
+            <li><a href="class-other.html">อื่น ๆ</a></li>
+            <li><a href="class-project.html">โครงงานนักเรียนนักศึกษา</a></li>
+          </ul>
+      </li>
+    </ul>
+
+    <!--login-->
+    <div class="login-form">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+        
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="forgotpassword.html">click here</a></p>
+            <p>don't have an account ? <a href="register.html">create one</a></p>
+        </form>
+    </div>
+
+  <!--book-->
+  <div class="container-fluid">
+    <div class="container">
+
+      <div class="product-list">
+
+          <div class="product">
+              <img src="image/book7.jpg" class="book7">
+              <h3>ระบบฐานข้อมูล <br> Database Systems</h3>
+              <div>
+                <details>
+                  <summary>คลิกเพื่อดูรายละเอียด</summary>
+                  หนังสือวางอยู่ในตู้ที่ 1 ชั้น 3
+                </details>
+              </div> 
+          </div>
+
+          <div class="product">
+              <img src="image/book8.jpg" class="book8">
+              <h3 class="text8-1">การควบคุมและ <br> ตรวจสอบระบบ <br> สารสนเทศ</h3>
+              <div>
+                <details class="text8-2">
+                  <summary>คลิกเพื่อดูรายละเอียด</summary>
+                  หนังสือวางอยู่ในตู้ที่ 1 ชั้น 2
+                </details>
+              </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book10.jpg" class="book10">
+            <h3>ระบบสารสนเทศและ <br> เทคโนโลยีการจัดการ <br> ความรู้</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 1 ชั้น 2
+              </details>
+            </div> 
+          </div>
+
+          <div class="product">
+            <img src="image/book14.jpg">
+            <h3>สร้างสื่อมัลติมีเดีย <br> สำหรับ E-Learning <br> และการนำเสนอแบบ <br> มืออาชีพ</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 1 ชั้น 4
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book21.jpg" class="book21">
+            <h3>จับสุภาษิตอังกฤษ <br> มาตีแผ่</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 2
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book22.jpg" class="book22">
+            <h3 class="text22-1">ศัพท์อังกฤษ 6,000 คำ <br> ไม่รู้ไม่ได้</h3>
+            <div>
+              <details class="text22-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 2
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book23.jpg" class="book23">
+            <h3>COMPLETE GUIDE TO <br> THE TOEIC TEST</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 2
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book24.jpg" class="book24">
+            <h3>เคล็ดลับการออกแบบ <br> e-Learning สำหรับ <br> นักออกแบบและผู้สอน</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 4
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book25.jpg" class="book25">
+            <h3 class="text25-1">การวิเคราะห์และออก <br> แบบระบบสารสนเทศ</h3>
+            <div>
+              <details class="text25-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 4
+              </details>
+            </div> 
+          </div>
+
+          <div class="product">
+            <img src="image/book26.gif" class="book26">
+            <h3 class="text26-1">ติดตั้ง ใช้งาน ดูแล <br> Network Hi-Speed <br> Internet</h3>
+            <div>
+              <details class="text26-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 4
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book27.jpg" class="book27">
+            <h3 class="text27-1">คู่มือใช้งาน Access <br> 2010 ฉบับสมบูรณ์</h3>
+            <div>
+              <details class="text27-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 4
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book28.jpg" class="book28">
+            <h3 class="text28-1">เขียนแบบทางวิศวกรรม <br> และสถาปัตยกรรม <br> AutoCAD 2016</h3>
+            <div>
+              <details class="text28-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 5
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book29.jpg">
+            <h3>หลักการพื้นฐานของ <br> วิศวกรรมซอฟต์แวร์</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 5
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book30.jpg">
+            <h3>Digital Learning <br> By Doing</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 5
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book31.jpg">
+            <h3>คัมภีร์การใช้งาน <br> ไมโครคอนโทรลเลอร์ <br> MCS-51</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 5
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book33.jpg">
+            <h3>โปรแกรมกราฟิก</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book34.jpg" class="book34">
+            <h3>สร้างกราฟด้วย Excel <br> Word PowerPoint <br> 2010 ด้วยตนเอง</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book35.jpg" class="book35">
+            <h3 class="text35-1">ใช้งาน Excel 2016 <br> ให้เร็วเว่อร์</h3>
+            <div>
+              <details class="text35-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book36.jpg" class="book36">
+            <h3 class="text36-1">คู่มือเขียน Windows & <br> Internet ฉบับ ลับ ลวง <br> พราง</h3>
+            <div>
+              <details class="text36-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book38.gif" class="book38">
+            <h3 class="text38-1">คู่มือคอมพิวเตอร์ <br> เบื้องต้น ฉบับ <br> Windows 7</h3>
+            <div>
+              <details class="text38-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book37.jpg" class="book37">
+            <h3>คู่มือใช้งาน Microsoft <br> Windows 8.1</h3>
+            <div>
+              <details >
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book39.jpg" class="book39">
+              <h3 class="text39-1">คู่มือใช้งาน Windows <br> 8.1 & Office 2013 <br> ฉบับสมบูรณ์</h3>
+            <div>
+              <details class="text39-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book5.jpg" class="book5">
+            <h3 class="text5-1">SQL Server 2008 <br> ฉบับสมบูรณ์</h3>
+            <div>
+              <details class="text5-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 1 ชั้น 3
+              </details>
+            </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/book15.gif" class="book15">
+            <h3>เขียนแบบคอมพิวเตอร์ <br> เบื้องต้นด้วย CAD ไท</h3>
+            <div>
+              <details>
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 2 ชั้น 1
+              </details>
+            </div>  
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!--buttonback-->
+    <p id="back-top">
+        <a href="#top"><i class='bx bx-up-arrow-alt'></i></a>
+    </p>
+
+<script src="class-page.js"></script>
+</body>
+</html>

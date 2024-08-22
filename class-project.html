@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="image/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="class-page.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"> <i class="fas fa-book">&nbsp;</i>IT library</a>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="search.html" class="fas fa-search" ></a>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--dropdown-->
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="index.html">หนังสือแนะนำ</a></li>
+      <li><a href="index.html">โครงงานนักเรียน นักศึกษา</a></li>
+      <li><a href="index.html">ข่าวสาร</a></li>
+        <li>
+            <a href="#">หมวดหมู่ ▾</a>
+            <ul class="dropdown">
+              <li><a href="class-App.html">ออกแบบและพัฒนาเว็บไซต์/แอปพลิเคชั่น</a></li>
+              <li><a href="class-html.html">PHP XML และ HTML</a></li>
+              <li><a href="class-java.html">JAVA</a></li>
+              <li><a href="class-c.html">ภาษา C</a></li>
+              <li><a href="class-other.html">อื่น ๆ</a></li>
+              <li><a href="class-project.html">โครงงานนักเรียนนักศึกษา</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--login-->
+    <div class="login-form">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+        
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="forgotpassword.html">click here</a></p>
+            <p>don't have an account ? <a href="register.html">create one</a></p>
+        </form>
+    </div>
+    
+  <!--book-->
+  <div class="container-fluid">
+    <div class="container">
+
+      <div class="product-list">
+
+          <div class="product">
+              <img src="image/ปก1.jpg" class="project1">
+              <h3>ถังขยะอัจฉริยะ <br> (Intelligent trash)</h3>
+              <div>
+                <details>
+                  <summary>คลิกเพื่อดูรายละเอียด</summary>
+                    หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+                    <br>
+                    คลิกเพื่อ 
+                  <a href="projectdetalis/โครงงานถังขยะอัจฉริยะ.pdf" download>download</a>
+                </details>
+              </div> 
+          </div>
+
+          <div class="product">
+              <img src="image/ปก2.jpg" class="project2">
+              <h3 class="textpro2-1">ถังขยะบดขวดน้ำ <br> (Trashcan <br> Mashed Bottle)</h3>
+              <div>
+                <details class="textpro2-2">
+                  <summary>คลิกเพื่อดูรายละเอียด</summary>
+                    หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+                    <br>
+                    คลิกเพื่อ 
+                  <a href="projectdetalis/โครงงานถังขยะบดขวดน้ำ.pdf" download> download</a>
+                </details>
+              </div>  
+          </div>
+
+          <div class="product">
+            <img src="image/ปก3.jpg" class="project3">
+            <h3 class="textpro3-1">เครื่องนับคนเข้า-ออก <br> อัตโนมัติผ่านระบบ IoT <br> (People Counter)</h3>
+            <div>
+              <details class="textpro3-2">
+                <summary>คลิกเพื่อดูรายละเอียด</summary>
+                  หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+                  <br>
+                  คลิกเพื่อ 
+                <a href="projectdetalis/โครงงานเครื่องนับคน เข้า-ออก อัตโนมัติ ผ่านระบบ IoT.pdf" download> download</a>
+              </details>
+            </div>  
+          </div>
+
+        <div class="product">
+          <img src="image/ปก4.jpg" class="project4">
+          <h3 class="textpro4-1">การพัฒนาเครื่องลด <br> ปริมาณฝุ่นละออง <br> PM 2.5 ควบคุมด้วย <br> ระบบ IoT </h3>
+          <div>
+            <details class="textpro4-2">
+              <summary>คลิกเพื่อดูรายละเอียด</summary>
+                หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+                <br>
+                คลิกเพื่อ 
+              <a href="projectdetalis/โครงงานเครื่องลดปริมาณฝุ่นละออง PM2.5.pdf" download> download</a>
+            </details>
+          </div>  
+        </div>
+
+      <div class="product">
+        <img src="image/ปก5.jpg" class="project5">
+        <h3>การพัฒนาเครื่องให้ <br> อาหารแมวอัตโนมัติ <br> โดยใช้เทคโนโลยี IoT</h3>
+        <div>
+          <details>
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานเครื่องให้อาหารเเมวอัตโนมัติ โดยใช้เทคโนโลยี IoT.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก6.jpg" class="project6">
+        <h3 class="textpro6-1">ถังขยะเปิด-ปิด <br> อัตโนมัติควบคุม <br> ด้วยระบบเซนเซอร์ </h3>
+        <div>
+          <details class="textpro6-2">
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานถังขยะเปิด ปิด อัตโนมัติ ด้วยระบบเซนเซอร์.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก7.jpg" class="project7">
+        <h3 class="textpro7-1">แบบจำลองเครื่อง <br> ฟอกอากาศอัจฉริยะ <br> (Smart Air <br> Purifier Model)</h3>
+        <div>
+          <details class="textpro7-2">
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานแบบจำลองเครื่องฟอกอากาศอัจฉริยะ.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก8.jpg" class="project8">
+        <h3 class="textpro8-1">ชุดจําลองระบบ <br> ไฮโดรโปนิกส์ <br> DRFT อัจฉริยะ <br> (Smart Dynamic <br> Root Floating <br> Technique Model) </h3>
+        <div>
+          <details class="textpro8-2">
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานแบบจำลองไฮโดรโปรนิกส์.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก9.jpg" class="project9">
+        <h3>พัฒนาเว็บไซต์ <br> ส่งเสริมการอ่าน <br> (manga& <br> lightnovel) </h3>
+        <div>
+          <details>
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานเว็บไซต์ส่งเสริมการอ่าน.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก10.jpg" class="project10">
+        <h3 class="textpro10-1">เว็บไซต์ส่งเสริม <br> สุขภาพ (Health <br> Booster) </h3>
+        <div>
+          <details class="textpro10-2">
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานเว็บไซต์ส่งเสริมสุขภาพ.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      <div class="product">
+        <img src="image/ปก11.jpg" class="project11">
+        <h3 class="textpro11-1">เว็บไซต์หาเพื่อนคุย <br> ผ่านข้อความ (Real <br> Time Chat)</h3>
+        <div>
+          <details class="textpro11-2">
+            <summary>คลิกเพื่อดูรายละเอียด</summary>
+              หนังสือวางอยู่ในตู้ที่ 3 ชั้น 2
+              <br>
+              คลิกเพื่อ 
+            <a href="projectdetalis/โครงงานเว็บไซต์หาเพื่อนคุยผ่านข้อความ.pdf" download> download</a>
+          </details>
+        </div>  
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="class-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/login/img/icon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form id="form" onsubmit="return validateForm();" action="index.html">
+                <h3>create account</h3>
+                <div class="input-group">
+                    <input type="text" id="username" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="email" required>
+                  <label for="">Email</label>
+              </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="input-group">
+                  <input type="tel" id="email" required>
+                  <label for="">Phonenumber</label>
+              </div>
+              <div class="input-group">
+                <input type="date" id="email" required>
+                <label for=""></label>
+            </div>
+                <a href="home.html"><button type="submit">Create your account</button></a>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
