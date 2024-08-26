@@ -783,3 +783,8 @@ details a{
     -moz-transition: 1s;
     transition: 1s;
 }
+h1 {
+    padding-top: 50px;
+    font-size: 3.5rem;
+    margin-left: 17rem;
+}
