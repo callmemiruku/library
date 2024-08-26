@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.footer .box-container .box1 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 :root {
     --green: #27ae60;
     --dark-color: #219150;
@@ -433,7 +433,7 @@ ul li:hover ul.dropdown {
     padding-right: 2rem;
 }
 .footer .box-container .box1 {
-    padding-left: 120px;
+    padding-left: 90px;
 }
 .footer .box-container .box2 {
     padding-right: -10px;
