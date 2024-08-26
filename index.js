@@ -12,18 +12,6 @@ document.querySelector('#close-login-btn').onclick = () =>{
     loginform.classList.remove('active');
 }
 
-window.onscroll = () =>{
-
-    searchForm.classList.remove('active');
-
-    if(window.scrollY > 80) {
-        document.querySelector('.header .header-2').classList.add('active');
-    } else {
-        document.querySelector('.header .header-2').classList.remove('active');
-    }
-
-}
-
 var loader = document.getElementById("pre-loader");
 
 window.addEventListener("load", function () {
